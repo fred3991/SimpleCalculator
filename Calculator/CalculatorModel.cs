@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Calculator
 {
@@ -61,15 +62,7 @@ namespace Calculator
         public double Divide(double operand1, double operand2)
         {
 
-            try
-            {
-                result = operand1 / operand2;
-            }
-            catch
-            {
-                MessageBox.Show("На ноль делить нельзя!");
-            }
-            return result;
+           return  operand1 / operand2; ;
 
 
         }
