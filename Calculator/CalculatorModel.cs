@@ -7,7 +7,6 @@
         {
 
         }
-
         public object Calculate(double operand1, double operand2, char operation)
         {
             if (operation == '+')
@@ -24,17 +23,11 @@
             {
                 result = Multiplication(operand1, operand2);
             }
-
             if (operation == '/')
             {
                 result = Divide(operand1, operand2);
             }
-
-
             return result;
-
-
-
         }
 
         public double Sum(double operand1, double operand2)
@@ -54,10 +47,7 @@
 
         public double Divide(double operand1, double operand2)
         {
-
            return  operand1 / operand2; ;
-
-
         }
 
 

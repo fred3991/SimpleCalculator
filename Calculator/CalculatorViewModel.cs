@@ -31,7 +31,6 @@ namespace Calculator
         public string Display
         {
             get => _display;
-
             set
             {
                 if (value != _display)
@@ -46,9 +45,7 @@ namespace Calculator
         public CalculatorViewModel(CalculatorModel calculator)
         {
             _calc = calculator;
-
             Clear();
-
             NumberCommand = new RelayCommand(param => { Number(Convert.ToInt32(param)); },
                                             param => CanDoNumber());
 
@@ -157,6 +154,7 @@ namespace Calculator
             }
         }
 
+
         private void UpdateOperand(int num, ref int? operand)
         {
             if (!operand.HasValue)
@@ -168,6 +166,9 @@ namespace Calculator
                 operand = operand * 10 + num;
             }
         }
+
+
+
 
         private void Calculate()
         {
@@ -185,6 +186,8 @@ namespace Calculator
 
             Display = _result.ToString();
         }
+
+
 
         public bool CanCalculate()
         {
